@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+/* Глобальные переменные (CSS Custom Properties) */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa; 
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+    --border-radius: 5px;
+    --transition-speed: 0.3s;
+}
+
+/* Сброс стилей (CSS Reset) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Ссылки */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+a:hover {
+    filter: brightness(90%);
+}
+ 
+
+/* Тёмная тема */
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         --background-color: #121212;
+//         --text-color: #f8f9fa;
+//         --primary-color: #1e90ff;
+//     }
+// }
+
+
+// /* Медиа-запрос для мобильных устройств */
+// @media (max-width: 768px) {
+//     body {
+//         font-size: 14px;
+//     }
+// }
