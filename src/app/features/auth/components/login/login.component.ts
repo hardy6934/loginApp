@@ -11,10 +11,8 @@ import { Observable } from 'rxjs';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  isLoggedIn$: Observable<boolean> | undefined;
 
   constructor(private authService: AuthService) {
-    this.isLoggedIn$ = this.authService.isLoggedIn$;
   }
  
   toggleLogin(): void {
@@ -24,4 +22,5 @@ export class LoginComponent {
       this.authService.login().subscribe();
     }
   }
+ 
 }

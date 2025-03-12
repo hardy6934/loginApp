@@ -19,13 +19,13 @@ export class AuthService {
     }).pipe(
       tap(response => {
         console.log('Login successful', response);
-        this.isLoggedInSubject.next(true); // ✅ Меняем состояние
+        this.isLoggedInSubject.next(true);  
       })
     );
   }
 
   logout(): void {
-    this.isLoggedInSubject.next(false); // ✅ Разлогиниваемся
+    this.isLoggedInSubject.next(false);  
   }
 
   getLoginStatus(): boolean {

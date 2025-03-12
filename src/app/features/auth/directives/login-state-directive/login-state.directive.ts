@@ -21,7 +21,7 @@ export class LoginStateDirective {
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe(); // 🧹 Очищаем подписку
+    this.subscription.unsubscribe();  
   }
  
  

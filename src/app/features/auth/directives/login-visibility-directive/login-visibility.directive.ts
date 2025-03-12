@@ -20,7 +20,7 @@ export class LoginVisibilityDirective {
     }
   
     ngOnDestroy(): void {
-      this.subscription.unsubscribe(); // 🧹 Очищаем подписку
+      this.subscription.unsubscribe();  
     }
 
   
